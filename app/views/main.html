@@ -1,0 +1,8 @@
+<div class="row">
+  <ng-include src="'views/topbar.html'"></ng-include>
+</div>
+
+<div class="row">
+  <ng-include src="'views/books.html'" ng-hide="showMain"></ng-include>
+  <ng-include src="'views/content.html'" ng-show="showMain"></ng-include>
+</div>

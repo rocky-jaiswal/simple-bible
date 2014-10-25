@@ -1,9 +1,11 @@
 'use strict'
 
 MainCtrl = ($scope, $rootScope, $location) ->
+  firstBook = "Genesis"
   $scope.showMain = true
   $scope.books = _.uniq(_.pluck(BIBLE, 'book'))
-  $scope.verses = _.filter BIBLE, (obj)-> obj.book is "Genesis"
+  $scope.book = firstBook
+  $scope.verses = _.filter BIBLE, (obj)-> obj.book is firstBook
 
   $scope.toggleBooks = ->
     $scope.showMain = !($scope.showMain)

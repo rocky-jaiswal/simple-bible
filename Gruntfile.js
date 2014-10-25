@@ -29,10 +29,10 @@ module.exports = function (grunt) {
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
-      bower: {
-        files: ['bower.json'],
-        tasks: ['wiredep']
-      },
+      // bower: {
+      //   files: ['bower.json'],
+      //   tasks: ['wiredep']
+      // },
       coffee: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.{coffee,litcoffee,coffee.md}'],
         tasks: ['newer:coffee:dist']
@@ -410,7 +410,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      'wiredep',
+     // 'wiredep',
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
@@ -433,7 +433,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'wiredep',
+   // 'wiredep',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',

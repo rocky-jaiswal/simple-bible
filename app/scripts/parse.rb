@@ -7,9 +7,9 @@ all_verses = []
 File.open("bible_kjv.txt", "r").each_line do |line|
   line.strip!
   next if line.size == 0
-  if m = line.match(/(^Book) (\d+) \s+ (\w+)$/)
+  if m = line.match(/(^Book) (\d+) \s+ (\d?\s+\w+)$/)
     all_verses << {book: book, chapter: chapter, verse: verse, text: text} if text.size > 0
-    book = m[3]
+    book = m[3].strip
     text = ""
     next
   end

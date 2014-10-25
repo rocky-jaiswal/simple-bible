@@ -18,6 +18,8 @@ module.exports = (config) ->
       'bower_components/angular-animate/angular-animate.js'
       'bower_components/angular-sanitize/angular-sanitize.js'
       'bower_components/angular-touch/angular-touch.js'
+      'bower_components/underscore/underscore.js'
+      'bower_components/angular-underscore/angular-underscore.js'
       'app/scripts/**/*.coffee'
       'test/mock/**/*.coffee'
       'test/spec/**/*.coffee'

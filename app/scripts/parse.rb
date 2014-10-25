@@ -31,3 +31,4 @@ File.open("in_json", "w") do |f|
     f.puts "{book: \"#{v[:book]}\", chapter: #{v[:chapter]}, verse: #{v[:verse]}, text: \"#{v[:text]}\"},"
   end
 end
+#the last comma needs to be removed

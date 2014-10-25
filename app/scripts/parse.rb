@@ -20,7 +20,7 @@ File.open("bible_kjv.txt", "r").each_line do |line|
     text    = m[5]
     next
   end
-  text = text + line
+  text = text + " #{line}"
 end
 
 all_verses << {book: book, chapter: chapter, verse: verse+1, text: text}

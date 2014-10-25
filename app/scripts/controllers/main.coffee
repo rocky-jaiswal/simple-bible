@@ -2,7 +2,7 @@
 
 MainCtrl = ($scope, $rootScope, $location) ->
   $scope.showMain = true
-  $scope.books = ["Genesis", "Exodus", "Deutronomy"]
+  $scope.books = _.uniq(_.pluck(BIBLE, 'book'))
   $scope.verses = _.filter BIBLE, (obj)-> obj.book is "Genesis"
 
   $scope.toggleBooks = ->
@@ -10,6 +10,7 @@ MainCtrl = ($scope, $rootScope, $location) ->
 
   $scope.showBook = (book)->
     $scope.showMain = true
+    $scope.book = book
     $scope.verses = _.filter BIBLE, (obj)-> obj.book is book
 
 MainCtrl.$inject = ["$scope", "$rootScope", "$location"]

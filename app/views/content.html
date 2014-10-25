@@ -1,6 +1,9 @@
 <div class="small-12 large-12 columns">
   <div class="panel">
     <table width="100%">
+      <th>
+        <td colspan="2">{{book}}</td>
+      </th>
       <tr ng-repeat="verse in verses">
         <td>{{verse.chapter}}:{{verse.verse}}</td>
         <td>{{verse.text}}</td>

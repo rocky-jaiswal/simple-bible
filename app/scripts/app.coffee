@@ -8,7 +8,7 @@
  #
  # Main module of the application.
 ###
-angular.module('simpleCenturyBibleApp', [
+angular.module('simpleBibleApp', [
   'ngAnimate',
   'ngSanitize',
   'ngTouch',

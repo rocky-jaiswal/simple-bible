@@ -20,4 +20,4 @@ MainCtrl = ($scope, $rootScope, $location) ->
     $scope.verses = _.filter BIBLE, (obj)-> obj.book is book and obj.chapter is chapter
 
 MainCtrl.$inject = ["$scope", "$rootScope", "$location"]
-angular.module("simpleCenturyBibleApp").controller "MainCtrl", MainCtrl
+angular.module("simpleBibleApp").controller "MainCtrl", MainCtrl

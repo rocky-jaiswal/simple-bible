@@ -3,6 +3,7 @@
 </div>
 
 <div class="row">
-  <ng-include src="'views/books.html'" ng-hide="showMain"></ng-include>
-  <ng-include src="'views/content.html'" ng-show="showMain"></ng-include>
+  <ng-include src="'views/books.html'"    ng-show="page == 'books'"></ng-include>
+  <ng-include src="'views/chapters.html'" ng-show="page == 'chapters'"></ng-include>
+  <ng-include src="'views/verses.html'"   ng-show="page == 'verses'"></ng-include>
 </div>

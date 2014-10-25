@@ -1,8 +1,10 @@
 <div class="books pure-menu">
-  <h3>{{book}}</h3>
+  <div class="panel">
+    <h3>{{book}}</h3>
+  </div>
   <ul>
     <li ng-repeat="chapter in chapters">
-      <a href="#" ng-click="showVerses(book, chapter)">{{chapter}}</a>
+      <a href="#" ng-click="showVerses(book, chapter)" class="pure-button">{{chapter}}</a>
     </li>
   </ul>
 </div>
